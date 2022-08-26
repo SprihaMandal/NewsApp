@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/news_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/heading_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="News Heading"
+        android:layout_below="@id/news_imageview"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/authorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="author"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/heading_textview"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/desc_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorView"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:text="NewsDetails"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc_textview"
+        android:layout_marginLeft="20dp"
+        android:text="21 March 2001"
+        android:textColor="#DF582D"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/staticTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc_textview"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@id/dateView"
+        android:text="2 min read" />
+
+
+</RelativeLayout>
